@@ -1,3 +1,4 @@
+import 'package:currency_rate_challange/configs.dart';
 import 'package:flutter/material.dart';
 
 class CurrencyRowItem extends StatelessWidget {
@@ -8,7 +9,7 @@ class CurrencyRowItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 16),
       decoration: BoxDecoration(
-        color: const Color(0xfff9f9f9),
+        color: Configs.colorListItemBackgroundColor,
         borderRadius: BorderRadius.circular(20)
       ),
       margin: const EdgeInsets.only(bottom: 15),
@@ -18,7 +19,7 @@ class CurrencyRowItem extends StatelessWidget {
           Row(
             children: const [
               Text("EUR/USD",style: TextStyle(
-                color: Colors.black,
+                color: Configs.colorTextBlack,
                 fontWeight: FontWeight.w700,
                 fontSize: 18
               ),),
@@ -27,12 +28,12 @@ class CurrencyRowItem extends StatelessWidget {
           Row(
             children: const [
               Text("0.8682",style: TextStyle(
-                  color: Color(0xff02cb16),
+                  color: Configs.colorTextGreen,
                   fontWeight: FontWeight.w500,
                   fontSize: 20
               ),),
               SizedBox(width: 4,),
-              Icon(Icons.arrow_upward,color: Color(0xff02cb16)),
+              Icon(Icons.arrow_upward,color: Configs.colorTextGreen),
             ],
           )
         ],
