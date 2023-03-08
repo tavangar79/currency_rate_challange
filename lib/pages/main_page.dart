@@ -1,3 +1,4 @@
+import 'package:currency_rate_challange/components/currency_row_item.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatelessWidget {
@@ -20,7 +21,7 @@ class MainPage extends StatelessWidget {
             Expanded(
               child:ListView.builder(
                 itemBuilder: (ctx,index){
-                  return Container();
+                  return const CurrencyRowItem();
                 },
                 itemCount: 10,
               ),
