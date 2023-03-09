@@ -2,7 +2,7 @@ import 'package:currency_rate_challange/configs.dart';
 import 'package:http/http.dart' as http;
 
 class ApiHelper {
-  static Future<String> getRates() async {
+  Future<String> getRates() async {
     try {
       var res = await http
           .get(Uri.parse("${Configs.baseUrl}/code-challenge/index.php"));
