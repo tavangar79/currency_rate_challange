@@ -32,7 +32,7 @@ class MainPageBloc extends BlocBase {
     try {
       showLoading();
 
-      var res = await ApiHelper.getRates();
+      var res = await ApiHelper().getRates();
       var json = jsonDecode(res);
 
       data.clear();
@@ -54,7 +54,7 @@ class MainPageBloc extends BlocBase {
 
   Future<void> updateData() async {
     try {
-      var res = await ApiHelper.getRates();
+      var res = await ApiHelper().getRates();
       var json = jsonDecode(res);
 
       oldData.clear();
